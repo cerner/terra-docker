@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  sut:
+    image: cerner/terra-node-ci:latest
+    build: .
+    command: node -v

@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  terra-node-dev:
+    build: ../
+    volumes:
+      - .:/opt/module
+      - zsh_history:/root/zsh_history
+
+  terra-node-dev-no-history:
+    build: ../
+    volumes:
+      - .:/opt/module
+
+  terra-node-dev-custom-dockerfile:
+    build:
+      context: .
+      dockerfile: dev.dockerfile
+    volumes:
+      - .:/opt/test
+
+volumes:
+  zsh_history:
