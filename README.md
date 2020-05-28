@@ -12,7 +12,7 @@
 
 # terra-docker
 
-This is a repo for docker files supporting terra CI and development.
+This is a repo for docker files supporting Terra CI and development.
 
 This repo contains docker files to create the following images:
 

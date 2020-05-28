@@ -10,7 +10,7 @@ This dockerfile provides a docker image for terra projects to extend to use in C
 
 ## Usage
 
-This docker container is expected to be extended by a project specific docker container, see example below.
+This docker image is intended for CI and as such is fairly traditional. This docker image is expected to be defined as the base image for a project specific Dockerfile; see example below.
 
 ```dockerfile
 # use node as base image
@@ -18,7 +18,7 @@ FROM cerner/terra-node-ci:1
 
 ```
 
-This docker container is intended for CI and as such is fairly traditional. Based on a node docker container, it copies the contents of the project and runs npm install to setup the project for testing.
+Then, when the above Dockerfile is used to build the project-specific docker container, the resulting docker container is based on a node docker container, it copies the contents of the project and runs npm install to setup the project for testing.
 
 To run tests against this container simply run the npm task you expect to run, for example using docker compose:
 
