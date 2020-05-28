@@ -37,7 +37,6 @@ assignees: ''
 * Component Name and Version:
 * Browser Name and Version:
 * Node/npm Version: [e.g. Node 8/npm 5]
-* Webpack Version:
 * Operating System and version (desktop or mobile):
 
 ## @ Mentions
