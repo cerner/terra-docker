@@ -28,7 +28,7 @@ volumes:
 
 ```
 
-This docker compose file sets up the dev docker container. It pulls a global image. Maps the port 8080 to the host's port 8080. Volume mounts the repo into the module folder to provide code to work and develop against. This also has the added benefit of caching node modules between runs of the docker container. Finally it uses a docker volume to cache the shell history between docker runs as well.
+This docker compose file sets up the dev docker container. It pulls a global image. Maps the port 8080 to the host's port 8080. Volume mounts the repo into the module folder to provide code to work and develop against. This also has the added benefit of caching node modules between runs of the docker container. Additionally, it uses a docker volume to cache the shell history between docker runs.
 
 To develop use the following command. The `--service-ports` flag is required otherwise the 8080 port won't be mapped. This will spin up a zsh instance with your code mounted to it.
 
