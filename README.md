@@ -18,7 +18,7 @@ This repo contains docker files to create the following images:
 
 ## terra-node-base
 
-This dockerfile serves as a base for our CI and Dev docker containers. It provides a common version of node as well as some other common settings.
+This dockerfile serves as a base for our CI and Dev docker containers. It provides a common version of node as well as some other common settings. It is based on node 10 Alpine.
 
 ## terra-node-ci
 

@@ -49,6 +49,7 @@ docker-compose run --service-ports dev
 * Only one dev env can bind to 8080 on the host.
   * You can either change the port manually or only run one container server at a time.
 * slower.
+* npm modules installed in the docker container may not work if you run node outside the docker container.
 
 ### Named module directory
 
