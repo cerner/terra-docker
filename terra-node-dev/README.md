@@ -36,7 +36,7 @@ To develop use the following command. The `--service-ports` flag is required oth
 dc run --service-ports dev
 ```
 
-### upsides
+### Upsides
 
 * isolated dev env
 * cross os compatibility
