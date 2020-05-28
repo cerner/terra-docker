@@ -5,7 +5,7 @@
 
 <!-- Name -->
 <h1 align="center">
-  Terra Toolkit
+  Terra Docker
 </h1>
 
 [![License](https://badgen.net/github/license/cerner/terra-docker)](https://github.com/cerner/terra-docker/blob/master/LICENSE)
