@@ -3,7 +3,7 @@
 This dockerfile provides a docker image setup with zshell for developers to use as a common node development environment. This image copies no code in and can be used directly with a volume mount to add code to the /opt/module directory.
 
 ## API (of a sort)
-
+* Extends terra-node-base
 * Zsh terminal
 * History caching location: `/root/zsh_history/`
 
