@@ -33,7 +33,7 @@ This docker compose file sets up the dev docker container. It pulls a global ima
 To develop use the following command. The `--service-ports` flag is required otherwise the 8080 port won't be mapped. This will spin up a zsh instance with your code mounted to it.
 
 ```bash
-dc run --service-ports dev
+docker-compose run --service-ports dev
 ```
 
 ### Upsides
