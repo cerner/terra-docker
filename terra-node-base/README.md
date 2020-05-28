@@ -2,7 +2,7 @@
 
 This dockerfile serves as a base for our CI and Dev docker containers. It provides a common version of node as well as some other common settings.
 
-# API (of a sort):
+## API (of a sort):
 
 * Workdir: /opt/module
 * Exposed Port: 8080
