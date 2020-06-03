@@ -27,3 +27,17 @@ This dockerfile provides a docker image for terra projects to extend to use in C
 ## terra-node-dev
 
 This dockerfile provides a docker image setup with zshell for developers to use as a common node development environment. This image copies no code in and can be used directly with a volume mount to add code to the /opt/module directory.
+
+## Versioning
+
+These docker containers are versioned via [semver](https://medium.com/@mccode/using-semantic-versioning-for-docker-image-tags-dfde8be06699).
+
+## Development notes
+
+### Changes to terra-node-base
+
+Make any changes to terra-node-base in an isolated pull request. Automated releases through docker hub are non deterministic and there is no guarantee that terra-node-base will build and be released before the containers that depend on it.
+
+### Major versions
+
+Versions are controlled via the automated build in docker hub. Before merging a major version into master, the versions in docker hub *must* be updated.
