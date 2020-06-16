@@ -2,6 +2,9 @@
 # This image copies no code in and can be used directly with a volume mount to add code to the /opt/module directory.
 FROM cerner/terra-node-base:latest
 
+# Open up port 9229 for node debugging
+EXPOSE 9229
+
 # Install zsh / oh-my-zsh
 RUN apk add zsh curl wget \
   && wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true\
