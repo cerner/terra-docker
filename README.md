@@ -1,6 +1,6 @@
 <!-- Logo -->
 <p align="center">
-  <img height="128" width="128" src="https://github.com/cerner/terra-docker/raw/master/terra.png">
+  <img height="128" width="128" src="https://github.com/cerner/terra-docker/raw/main/terra.png">
 </p>
 
 <!-- Name -->
@@ -8,7 +8,7 @@
   Terra Docker
 </h1>
 
-[![License](https://badgen.net/github/license/cerner/terra-docker)](https://github.com/cerner/terra-docker/blob/master/LICENSE)
+[![License](https://badgen.net/github/license/cerner/terra-docker)](https://github.com/cerner/terra-docker/blob/main/LICENSE)
 
 # terra-docker
 
@@ -38,6 +38,14 @@ These docker containers are versioned via [semver](https://medium.com/@mccode/us
 
 Make any changes to terra-node-base in an isolated pull request. Automated releases through docker hub are non deterministic and there is no guarantee that terra-node-base will build and be released before the containers that depend on it.
 
-### Major versions
+### Releases
 
-Versions are controlled via the automated build in docker hub. Before merging a major version into master, the versions in docker hub *must* be updated.
+Are handled by docker hub based on tags.
+
+To release terra-node-base tag a branch with `terra-node-base@v#.#` where `#.#` is the version you wish to release.
+
+To release terra-node-ci tag a branch with `terra-node-ci@v#.#` where `#.#` is the version you wish to release.
+
+To release terra-node-dev tag a branch with `terra-node-base@v#.#` where `#.#` is the version you wish to release.
+
+All release will release a latest tag and a tag based on the major version. 1.1 would be released with a 1 tag, 2.2 would be released with a 2 tag, etc.
