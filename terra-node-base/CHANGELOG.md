@@ -4,9 +4,6 @@
 
 ## Unreleased
 
-* Changed
-  * Updated to node v12(erbium).
-
 ----------
 
 ## 1.0 - (June 3, 2020)

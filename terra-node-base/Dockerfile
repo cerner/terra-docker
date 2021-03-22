@@ -1,5 +1,5 @@
 # This dockerfile serves as a base for our CI and Dev docker containers. It provides a common version of node as well as some other common settings.
-FROM node:erbium-alpine
+FROM node:dubnium-alpine
 
 # Open up port 8080
 EXPOSE 8080
