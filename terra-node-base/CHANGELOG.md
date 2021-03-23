@@ -6,6 +6,7 @@
 
 * Changed
   * Updated to node v12(erbium).
+  * Updated Readme.
 
 ----------
 
